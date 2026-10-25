@@ -4,12 +4,21 @@
   gap: 16px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 64px;
-  padding-top: 40px;
+  margin-top: 0;
+  padding-top: 0;
   padding-bottom: 48px;
-  border-top: 1px solid var(--mist);
   font-size: 14px;
   color: var(--slate);
+}
+.site-footer.wrap { margin-top: 32px; }
+.site-footer::after {
+  position: relative;
+  left: 50%;
+  flex: 0 0 100vw;
+  width: 100vw;
+  border-top: 1px solid var(--mist);
+  content: "";
+  transform: translateX(-50%);
 }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a { text-decoration: none; }

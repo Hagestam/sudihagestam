@@ -1,10 +1,22 @@
 .site-header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: clamp(28px, 4vw, 44px);
-  padding-bottom: clamp(16px, 2vw, 24px);
+  min-height: 44px;
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+.site-header.wrap { margin: 0 auto clamp(36px, 5vw, 64px); }
+.site-header::after {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
   border-bottom: 1px solid var(--mist);
+  content: "";
+  transform: translateX(-50%);
 }
 .logo {
   display: grid;

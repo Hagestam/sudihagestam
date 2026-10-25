@@ -17,6 +17,11 @@ export default function Background() {
           ))}
         </dl>
       </div>
+      <div className="background-divider" aria-hidden="true">
+        <span className="background-divider__node background-divider__node--start" />
+        <span className="background-divider__emblem">✦</span>
+        <span className="background-divider__node background-divider__node--end" />
+      </div>
       <div>
         <h3 className="sub-title">Education</h3>
         <ul className="edu">

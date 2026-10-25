@@ -1,6 +1,6 @@
 .contact {
   text-align: center;
-  padding-bottom: clamp(40px, 6vw, 72px);
+  padding-bottom: 0;
 }
 .contact .section-title { scroll-margin-top: 120px; }
 .contact-text {

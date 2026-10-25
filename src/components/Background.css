@@ -1,8 +1,51 @@
 .background {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(40px, 6vw, 65px);
+  grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr);
+  column-gap: clamp(20px, 3vw, 40px);
   margin-top: 80px;
+}
+.background-divider {
+  position: relative;
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: stretch;
+  justify-content: center;
+}
+.background-divider::before {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--mist) 12%, var(--mist) 88%, transparent);
+  content: "";
+}
+.background-divider__node {
+  position: absolute;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--ash);
+  border-radius: 50%;
+  background: var(--bone);
+  transform: translateX(-50%);
+}
+.background-divider__node--start { top: 0; }
+.background-divider__node--end { bottom: 0; }
+.background-divider__emblem {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--mist);
+  border-radius: 50%;
+  background: var(--bone);
+  color: #d9622b;
+  font-size: 16px;
+  line-height: 1;
 }
 .skills,
 .edu { margin-top: 24px; }
@@ -11,5 +54,31 @@
 .edu li { margin-bottom: 20px; }
 
 @media (max-width: 820px) {
-  .background { grid-template-columns: 1fr; }
+  .background {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+  }
+  .background-divider {
+    grid-column: 1;
+    grid-row: auto;
+    height: 32px;
+    align-items: center;
+  }
+  .background-divider::before {
+    top: 50%;
+    right: 4px;
+    bottom: auto;
+    left: 4px;
+    width: auto;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--mist) 12%, var(--mist) 88%, transparent);
+  }
+  .background-divider__node {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  .background-divider__node--start { left: 0; }
+  .background-divider__node--end { right: 0; left: auto; }
+  .background-divider__emblem { margin-top: 0; }
 }

@@ -1,5 +1,5 @@
 .hero {
-  padding-top: clamp(40px, 8vh, 80px);
+  padding-top: 0;
   padding-bottom: 20px;
 }
 .hero-title {
