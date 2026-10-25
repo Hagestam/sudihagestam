@@ -1,0 +1,13 @@
+.contact {
+  text-align: center;
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+.contact .section-title { scroll-margin-top: 120px; }
+.contact-text {
+  max-width: 540px;
+  margin: 24px auto 0;
+  font-size: 20px;
+  line-height: 1.35;
+  color: var(--graphite);
+}
+.contact .btn-row { margin-top: 44px; }

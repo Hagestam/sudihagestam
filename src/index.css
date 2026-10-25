@@ -1,0 +1,63 @@
+/* Design tokens, base styles and shared utilities */
+:root {
+  --bone: #f4f3f1;
+  --ink: #333333;
+  --graphite: #4d4d4d;
+  --slate: #666666;
+  --ash: #aaaaaa;
+  --mist: #dddddd;
+  --pill: #141312;     /* button: almost black */
+  --signal: #e5483c;   /* button: the one red dot */
+  --shadow-art: 0 5px 15px rgba(90, 50, 40, 0.15), 0 4px 8px rgba(80, 40, 30, 0.1);
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --gutter: clamp(24px, 5vw, 64px);
+  --section: clamp(96px, 12vw, 140px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; background: var(--bone); }
+body {
+  font: 400 15px/1.5 var(--font-sans);
+  color: var(--graphite);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-weight: 400; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+ul { list-style: none; }
+::selection { background: var(--mist); color: var(--ink); }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 var(--gutter); }
+.section { padding-top: var(--section); scroll-margin-top: 24px; }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 3.4vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.sub-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--slate);
+}
+.body-text { max-width: 62ch; margin-top: 16px; }
+.ink { color: var(--ink); }
+.muted { color: var(--ash); font-size: 14px; }
+.muted-dark { color: var(--slate); font-size: 14px; }
+
+/* Space between a row of buttons and whatever comes next */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+.btn-row--center { justify-content: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

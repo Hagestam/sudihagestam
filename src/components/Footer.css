@@ -1,0 +1,16 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  padding-top: 40px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--mist);
+  font-size: 14px;
+  color: var(--slate);
+}
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { text-decoration: none; }
+.footer-links a:hover { color: var(--ink); }

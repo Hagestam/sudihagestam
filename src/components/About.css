@@ -1,0 +1,10 @@
+.about {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+}
+
+@media (max-width: 820px) {
+  .about { grid-template-columns: 1fr; }
+}

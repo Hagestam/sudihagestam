@@ -1,0 +1,15 @@
+.background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 65px);
+  margin-top: 80px;
+}
+.skills,
+.edu { margin-top: 24px; }
+.skills > div { margin-bottom: 18px; }
+.skills dt { font-size: 14px; color: var(--ink); }
+.edu li { margin-bottom: 20px; }
+
+@media (max-width: 820px) {
+  .background { grid-template-columns: 1fr; }
+}
