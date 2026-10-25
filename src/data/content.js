@@ -14,7 +14,7 @@ export const profile = {
   github: "https://github.com/hagestam",
   linkedin: "https://www.linkedin.com/in/sudihagestam", // TODO: paste your LinkedIn URL
   // Files live in the "public" folder. Paths start with "/" and do NOT include "public".
-  photo: "/profile.jpg",
+  photo: `${import.meta.env.BASE_URL}profile.jpg`,
 };
 
 export const navLinks = [
@@ -32,7 +32,7 @@ export const projects = [
     description:
       "Fine-tuned EfficientNet-B0 on 54,000 PlantVillage images, then cut the model size by 75% with INT8 quantization for mobile. Retrieval-augmented advice sits behind a FastAPI backend.",
     stack: "PyTorch, EfficientNet, TensorFlow Lite, FastAPI, LangChain",
-    image: "/projects/crop-disease.png",
+    image: `${import.meta.env.BASE_URL}projects/crop-disease.png`,
     link: "https://github.com/Hagestam/crop-disease-advisor", // TODO: this project repo
   },
   {
@@ -42,7 +42,7 @@ export const projects = [
     description:
       "Hybrid Isolation Forest and XGBoost detector trained on 590K transactions, with SHAP attribution for every prediction and sub-50ms inference in Docker with Redis.",
     stack: "XGBoost, Isolation Forest, SHAP, MLflow, Redis, FastAPI",
-    image: "/projects/Fraud-detection.png",
+    image: `${import.meta.env.BASE_URL}projects/Fraud-detection.png`,
     link: "https://github.com/Hagestam/fraud-detection-model",
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
     description:
       "Headless backend that schedules preventive maintenance and re-assigns technicians for emergencies over WhatsApp, using a dual-loop scheduler and async webhooks.",
     stack: "Python, FastAPI, SQLAlchemy, Claude API",
-    image: "/projects/agent.png",
+    image: `${import.meta.env.BASE_URL}projects/agent.png`,
     link: "https://github.com/Hagestam/maintainance-agent",
   },
   {
@@ -62,7 +62,7 @@ export const projects = [
     description:
       "Ticket ingestion, AI triage, priority scoring and escalation routing, with generated fixes for common Windows, M365 and network incidents and a full audit trail.",
     stack: "Python, FastAPI, Claude API, PostgreSQL, Twilio",
-    image: "/projects/it-helpdesk.jpg",
+    image: `${import.meta.env.BASE_URL}projects/it-helpdesk.jpg`,
     link: "https://github.com/Hagestam/helpdesk-triage",
   },
 ];

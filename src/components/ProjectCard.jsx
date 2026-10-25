@@ -2,9 +2,9 @@ import Reveal from "./Reveal.jsx";
 import Media from "./Media.jsx";
 import PillButton from "./PillButton.jsx";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, isReached }) {
   return (
-    <Reveal as="article" className="project">
+    <Reveal as="article" className={`project${isReached ? " project--reached" : ""}`}>
       <Media src={project.image} alt={`${project.title} screenshot`} hint="Add project screenshot" />
       <div>
         <h3 className="project-title">{project.title}</h3>
