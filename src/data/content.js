@@ -3,10 +3,9 @@
 export const profile = {
   name: "Sudi Hagestam",
   heroTitle: ["Hi, I'm Sudi Hagestam.", "An aspiring ML and AI Engineer."],
-  intro:
-    "I'm studying Computer Science at the African Leadership University in Mauritius. I love exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
+  intro: "I build practical software with machine learning, AI and backend systems.",
   about: [
-    "I'm studying Computer Science at the African Leadership University in Mauritius. Most of my recent work has involved machine learning and AI applications, although I'm also interested in backend development and the systems that support them.",
+    "I'm studying Computer Science at the African Leadership University in Mauritius. I love exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
     "I enjoy working through technical problems, experimenting with different approaches and seeing an idea develop into something that actually works.",
   ],
   contactLine: "I'm currently looking for internship opportunities in software development, AI and data-related fields.",

@@ -17,7 +17,7 @@ export default function Hero() {
       </h1>
       <p className="hero-sub">{profile.intro}</p>
       <div className="btn-row">
-        <PillButton href="#projects">See the work</PillButton>
+        <PillButton href="#contact">Get in touch</PillButton>
         <PillButton href={`mailto:${profile.email}`} variant="ghost">
           Email me
         </PillButton>

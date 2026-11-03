@@ -18,7 +18,7 @@ export default function About() {
             </p>
           ))}
           <div className="btn-row">
-            <PillButton href="#contact">Get in touch</PillButton>
+            <PillButton href="#projects">See the work</PillButton>
           </div>
         </div>
       </Reveal>
