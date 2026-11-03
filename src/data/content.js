@@ -2,14 +2,14 @@
 
 export const profile = {
   name: "Sudi Hagestam",
-  heroTitle: ["Hi, my name is Sudi Hagestam.", "I am an aspiring ML engineer."],
+  heroTitle: ["Hi, I'm Sudi Hagestam.", "Computer Science student interested in machine learning and AI."],
   intro:
-    "I build end-to-end ML pipelines, agentic AI systems and data tools, from model training to deployed APIs.",
+    "I'm studying Computer Science at the African Leadership University in Mauritius. I enjoy building software and exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
   about: [
-    "I am a computer science student at African Leadership University in Mauritius, focused on AI, machine learning and data science.",
-    "I like turning operational problems into data-driven systems: models that are fast enough to deploy, explainable enough to trust, and wrapped in clean APIs.",
+    "I'm studying Computer Science at the African Leadership University in Mauritius. Most of my recent work has involved machine learning and AI applications, although I'm also interested in backend development and the systems that support them.",
+    "I enjoy working through technical problems, experimenting with different approaches and seeing an idea develop into something that actually works.",
   ],
-  contactLine: "Open to internships in machine learning, data and AI engineering.",
+  contactLine: "I'm currently looking for internship opportunities in software development, AI and data-related fields.",
   email: "s.hagestam@alustudent.com",
   github: "https://github.com/hagestam",
   linkedin: "https://www.linkedin.com/in/sudihagestam", // TODO: paste your LinkedIn URL
@@ -30,7 +30,7 @@ export const projects = [
     metric: "97.3%",
     metricLabel: "top-1 accuracy, 38 classes",
     description:
-      "Fine-tuned EfficientNet-B0 on 54,000 PlantVillage images, then cut the model size by 75% with INT8 quantization for mobile. Retrieval-augmented advice sits behind a FastAPI backend.",
+      "Trained EfficientNet-B0 on 54,000 PlantVillage images to classify 38 crop disease categories, achieving 97.3% top-1 accuracy. Reduced the model size by 75% through INT8 quantisation and built a RAG component that provides additional information about the predicted diseases. The application uses FastAPI for its backend.",
     stack: "PyTorch, EfficientNet, TensorFlow Lite, FastAPI, LangChain",
     image: `${import.meta.env.BASE_URL}projects/crop-disease.png`,
     link: "https://github.com/Hagestam/crop-disease-advisor", // TODO: this project repo
@@ -40,7 +40,7 @@ export const projects = [
     metric: "94.2%",
     metricLabel: "F1 on the fraud class",
     description:
-      "Hybrid Isolation Forest and XGBoost detector trained on 590K transactions, with SHAP attribution for every prediction and sub-50ms inference in Docker with Redis.",
+      "Developed a fraud detection system combining Isolation Forest and XGBoost using a dataset of 590,000 transactions. Achieved a 94.2% F1-score on the fraud class and integrated SHAP to explain individual predictions. Containerised the application with Docker and used Redis to support inference, achieving sub-50ms prediction latency in testing.",
     stack: "XGBoost, Isolation Forest, SHAP, MLflow, Redis, FastAPI",
     image: `${import.meta.env.BASE_URL}projects/Fraud-detection.png`,
     link: "https://github.com/Hagestam/fraud-detection-model",
@@ -48,9 +48,9 @@ export const projects = [
   {
     title: "Autonomous Maintenance Agent",
     metric: "P0",
-    metricLabel: "interrupts reassign technicians live",
+    metricLabel: "emergency priority level",
     description:
-      "Headless backend that schedules preventive maintenance and re-assigns technicians for emergencies over WhatsApp, using a dual-loop scheduler and async webhooks.",
+      "Developed a backend application for managing maintenance requests and technician assignments. The system schedules preventive maintenance and can reassign technicians when emergencies occur. Integrated WhatsApp notifications and asynchronous webhooks to support communication and updates.",
     stack: "Python, FastAPI, SQLAlchemy, Claude API",
     image: `${import.meta.env.BASE_URL}projects/agent.png`,
     link: "https://github.com/Hagestam/maintainance-agent",
@@ -58,9 +58,9 @@ export const projects = [
   {
     title: "Intelligent IT Helpdesk",
     metric: "P1",
-    metricLabel: "escalations alert seniors instantly",
+    metricLabel: "urgent ticket priority",
     description:
-      "Ticket ingestion, AI triage, priority scoring and escalation routing, with generated fixes for common Windows, M365 and network incidents and a full audit trail.",
+      "Built an AI-assisted helpdesk system that processes incoming support tickets, classifies incidents and assigns priority levels. It can escalate urgent issues to senior technicians and generate suggested solutions for common Windows, Microsoft 365 and network problems. Includes an audit trail for tracking ticket activity.",
     stack: "Python, FastAPI, Claude API, PostgreSQL, Twilio",
     image: `${import.meta.env.BASE_URL}projects/it-helpdesk.jpg`,
     link: "https://github.com/Hagestam/helpdesk-triage",
@@ -73,21 +73,21 @@ export const experience = [
     org: "Google Developer Groups on Campus, The Co-operative University of Kenya",
     dates: "Jan 2025 – Oct 2025",
     summary:
-      "Supported workshops in web, cloud and AI/ML for a 996-member developer community, mentored students through debugging and hackathons, and helped coordinate events.",
+      "Helped organise technical workshops covering web development, cloud technologies and AI/ML for a campus developer community of 996 members. Mentored students during project development and debugging sessions and supported hackathon preparation.",
   },
   {
     role: "Game Engineering Intern",
     org: "AuraVision, Nairobi",
     dates: "May 2025 – Aug 2025",
     summary:
-      "Taught Unity (C#) and Unreal Engine (C++), reviewed student code for quality and OOP, and helped build AI-driven NPC behavior and pathfinding into the curriculum.",
+      "Worked with Unity (C#) and Unreal Engine (C++ and Blueprints), teaching students game development concepts and reviewing their code. Covered object-oriented programming, game physics and AI behaviour trees. Also contributed to learning materials on NPC behaviour and pathfinding.",
   },
   {
     role: "Alumni IT Instructor, Databases",
     org: "Kakamega School",
     dates: "Jun 2023 – Aug 2023",
     summary:
-      "Mentored 63 students on relational database projects and reviewed and debugged more than 70 of them.",
+      "Mentored 63 students working on their KCSE Computer Studies database projects. Helped students with relational database design, Microsoft Access and SQL. Reviewed and debugged more than 70 projects.",
   },
 ];
 
