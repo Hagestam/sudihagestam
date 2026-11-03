@@ -2,9 +2,9 @@
 
 export const profile = {
   name: "Sudi Hagestam",
-  heroTitle: ["Hi, I'm Sudi Hagestam.", "Computer Science student interested in machine learning and AI."],
+  heroTitle: ["Hi, I'm Sudi Hagestam.", "An aspiring ML and AI Engineer."],
   intro:
-    "I'm studying Computer Science at the African Leadership University in Mauritius. I enjoy building software and exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
+    "I'm studying Computer Science at the African Leadership University in Mauritius. I love exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
   about: [
     "I'm studying Computer Science at the African Leadership University in Mauritius. Most of my recent work has involved machine learning and AI applications, although I'm also interested in backend development and the systems that support them.",
     "I enjoy working through technical problems, experimenting with different approaches and seeing an idea develop into something that actually works.",
