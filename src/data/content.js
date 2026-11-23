@@ -2,11 +2,16 @@
 
 export const profile = {
   name: "Sudi Hagestam",
-  heroTitle: ["Hi, I'm Sudi Hagestam.", "An aspiring ML and AI Engineer."],
-  intro: "I build practical software with machine learning, AI and backend systems.",
+  heroTitle: [
+    "Hi, I'm Sudi Hagestam.",
+    "Computer Science student building software with AI and backend technologies.",
+  ],
+  intro:
+    "I build practical software and enjoy exploring how machine learning can be applied to real problems. Much of my recent work has involved developing AI applications and the systems behind them.",
   about: [
-    "I'm studying Computer Science at the African Leadership University in Mauritius. I love exploring how computing can be applied to practical problems. Much of my recent work has involved machine learning and AI, alongside backend development and data systems.",
-    "I enjoy working through technical problems, experimenting with different approaches and seeing an idea develop into something that actually works.",
+    "I'm a Computer Science undergraduate at the African Leadership University in Mauritius. Recently, my work has focused on AI applications and backend software.",
+    "I've built a computer vision model and a financial anomaly detection system. I have also developed an AI-assisted helpdesk application. These projects have given me practical experience with Python and API development, as well as model evaluation and data processing.",
+    "I enjoy exploring unfamiliar technologies and working through problems until I have something functional to show for it.",
   ],
   contactLine: "I'm currently looking for internship opportunities in software development, AI and data-related fields.",
   email: "s.hagestam@alustudent.com",
@@ -91,11 +96,25 @@ export const experience = [
 ];
 
 export const skills = [
-  { group: "Languages", items: "Python, C++, C, SQL" },
-  { group: "Data", items: "Pandas, NumPy, ETL, Statistical Analysis, EDA" },
-  { group: "Machine learning", items: "Scikit-Learn, PyTorch, TensorFlow Lite, EfficientNet, XGBoost" },
-  { group: "MLOps", items: "MLflow, Redis, FastAPI, SQLAlchemy, REST APIs" },
-  { group: "Tools", items: "Git, Jupyter, PostgreSQL, MongoDB, Twilio, Power BI, Excel" },
+  { group: "PROGRAMMING LANGUAGES", items: "Python, C++, C, SQL, C#" },
+  {
+    group: "AI & MACHINE LEARNING",
+    items:
+      "PyTorch, Scikit-learn, TensorFlow Lite, EfficientNet, XGBoost, Retrieval-Augmented Generation (RAG), Prompt Engineering",
+  },
+  {
+    group: "BACKEND DEVELOPMENT",
+    items: "FastAPI, REST APIs, SQLAlchemy, PostgreSQL, Redis",
+  },
+  {
+    group: "DATA ANALYTICS",
+    items:
+      "Pandas, NumPy, ETL, Exploratory Data Analysis, Statistical Analysis, Feature Engineering, Power BI",
+  },
+  {
+    group: "TOOLS & DEPLOYMENT",
+    items: "Docker, MLflow, Git, Jupyter Notebooks, MongoDB, Twilio, Excel",
+  },
 ];
 
 export const education = [
