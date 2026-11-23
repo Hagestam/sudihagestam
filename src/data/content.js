@@ -96,24 +96,24 @@ export const experience = [
 ];
 
 export const skills = [
-  { group: "PROGRAMMING LANGUAGES", items: "Python, C++, C, SQL, C#" },
+  { group: "PROGRAMMING LANGUAGES", items: "Python, C++, C, C#, SQL" },
   {
-    group: "AI & MACHINE LEARNING",
+    group: "AI ENGINEERING",
     items:
       "PyTorch, Scikit-learn, TensorFlow Lite, EfficientNet, XGBoost, Retrieval-Augmented Generation (RAG), Prompt Engineering",
   },
   {
-    group: "BACKEND DEVELOPMENT",
+    group: "BACKEND & API DEVELOPMENT",
     items: "FastAPI, REST APIs, SQLAlchemy, PostgreSQL, Redis",
   },
   {
-    group: "DATA ANALYTICS",
-    items:
-      "Pandas, NumPy, ETL, Exploratory Data Analysis, Statistical Analysis, Feature Engineering, Power BI",
+    group: "SOFTWARE TOOLS & DEPLOYMENT",
+    items: "Docker, MLflow, Git, Jupyter Notebooks, MongoDB, Twilio",
   },
   {
-    group: "TOOLS & DEPLOYMENT",
-    items: "Docker, MLflow, Git, Jupyter Notebooks, MongoDB, Twilio, Excel",
+    group: "DATA PROCESSING & ANALYSIS",
+    items:
+      "Pandas, NumPy, ETL, Exploratory Data Analysis, Statistical Analysis, Feature Engineering, Power BI, Excel",
   },
 ];
 
